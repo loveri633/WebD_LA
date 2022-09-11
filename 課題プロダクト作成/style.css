@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 66px;
+    margin-left: 653px;
+    padding: 0 50px 0 50px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0 50px 0 50px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    font-size: 27px;
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 15px 0;
+    transition: 0.5s ;
+}
+
+nav a:hover {
+    color: #3d5cdb;
+}
+
+.title {
+   width: 900px;
+   height: 340px;
+   margin: 0 auto;
+   margin-top: 125px;
+}
+
+.title img {
+    width: 900px;
+    display: inline-block;
+    text-align: center;
+}
+
+.title p {
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-family: futura-pt,sans-serif;
+    font-weight: 100;
+    font-style: italic
+}
+
+.bg-switcher {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images2/background1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+h2 {
+    color: #3d5cdb;
+    font-size: 53px;
+    font-family: futura-pt,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 40px;
+    text-align: center;
+}
+
+.intro1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 120px 30px 120px;
+}
+
+.intro-img {
+    width: 500px;
+}
+
+.intro-box {
+    margin: 10px 0 0 40px;
+}
+
+.intro-text {
+    width: 400px;
+    margin: 0 50px;
+    line-height: 32px;
+}
+
+.intro-button {
+    text-align: center;
+    display:block;
+    margin: 0 auto;
+    width: 170px;
+    background-color: #3d5cdb;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 30px 165px;
+    text-decoration: none;
+}
+
+.intro-button:hover {
+    box-shadow: #858c8e 0px 2px 15px 2px;
+}
+
+.intro2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 120px 20px 120px;
+    margin: 40px 0;
+    flex-direction:row-reverse
+}
+
+.intro-box2 {
+    margin-right: 40px;
+}
+
+.yellow {
+    background-color: #ffbf00;
+}
+
+#courses {
+    text-align: center;
+   background-color: skyblue;
+   height: 941px;
+}
+
+.course-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 55px 50px;
+}
+
+.course-box {
+    width: 240px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px 10px 10px;
+}
+
+.course-box-img {
+    width: 150px;
+    height: 148px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-box-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #183c61;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.course-box-button {
+    display: inline-block;
+    font-weight: 700;
+    margin: 25px 5px 15px 5px;
+    width: 170px;
+    background-color: #f16529;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.course-box-button:hover {
+    box-shadow: #858c8e 0px 2px 15px 2px;
+}
+
+.css {
+    background-color: #29a9df;
+}
+
+.unity {
+    background-color: #333333;
+}
+
+.ruby {
+    background-color: #ff5252;
+}
+
+.js {
+    background-color: #fed700;
+}
+
+.swift {
+    background-color: #fe7536;
+}
+
+.go {
+    background-color: #73cedd;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.slider li {
+    height: auto;
+}
+  
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+  
+.slick-dots {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#access {
+    padding: 50px 0 40px 0;
+}
+
+#access h2 {
+    padding: 40px;;
+}
+
+iframe {
+    display: flex;
+    margin: 0 auto;
+}
+
+footer {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 16px;
+    color: #3d5cdb;
+    font-family: futura-pt,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#introduction, #courses, #images, #access {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 1s ease-in-out ;
+}
