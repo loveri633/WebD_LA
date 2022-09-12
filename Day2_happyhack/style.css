@@ -4,16 +4,41 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Futura-Dem';
+    src: url('fonts/Futura-Dem.ttf') format('truetype');
+         /* url('fonts/Futura-DemObl') format('truetype'); */
+}
+
+@font-face {
+    font-family: 'Futura-MedObl';
+    src: url('fonts/Futura-MedObl.ttf') format('truetype');
+         /* url('fonts/Futura-DemObl') format('truetype'); */
+}
+
+@font-face {
+    font-family: 'Futura-Bol';
+    src: url('fonts/Futura-Bol.ttf') format('truetype');
+         /* url('fonts/Futura-DemObl') format('truetype'); */
+}
+
+@font-face {
+    font-family: 'Futura-Med';
+    src: url('fonts/Futura-Med.ttf') format('truetype');
+         /* url('fonts/Futura-DemObl') format('truetype'); */
+}
+
 
 nav {
     height: 66px;
     margin-left: 653px;
-    padding: 0 50px 0 50px;
+    /* padding: 0 50px 0 50px; */
 }
 
 nav ul {
     display: flex;
     margin: 0 50px 0 50px;
+    justify-content: space-between;
 }
 
 nav li {
@@ -21,16 +46,18 @@ nav li {
 }
 
 nav a {
+    height: 66px;
     color: #fff;
     font-size: 27px;
-    font-family: futura-pt,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: Futura-Dem;
+    /* font-weight: 400; */
+    /* font-style: normal; */
     text-decoration: none;
     display: inline-block;
-    padding: 30px 15px 0;
-    transition: 0.5s ;
+    padding: 30px 15px 0 15px;
+    transition: 0.5s ;  
 }
+
 
 nav a:hover {
     color: #3d5cdb;
@@ -41,7 +68,6 @@ nav a:hover {
    height: 340px;
    margin: 0 auto;
    margin-top: 125px;
-   background-color: pink;
 }
 
 .title img {
@@ -54,10 +80,10 @@ nav a:hover {
     margin-top: 30px;
     text-align: center;
     color: #fff;
-    font-size: 45px;
-    font-family: futura-pt,sans-serif;
-    font-weight: 100;
-    font-style: italic
+    font-size: 50px;
+    font-family: Futura-MedObl;
+    /* font-weight: 100;
+    font-style: italic */
 }
 
 .bg-switcher {
@@ -70,13 +96,12 @@ nav a:hover {
 
 h2 {
     color: #3d5cdb;
-    font-size: 53px;
-    font-family: futura-pt,sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-size:60px;
+    font-family: Futura-Bol;
+    /* font-weight: 700;
+    font-style: normal; */
     padding: 40px;
     text-align: center;
-    background-color: red;
 }
 
 .intro1 {
@@ -261,11 +286,11 @@ footer {
     height: 80px;
     line-height: 80px;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     color: #3d5cdb;
-    font-family: futura-pt,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Futura-Med';
+    /* font-weight: 400;
+    font-style: normal; */
 }
 
 #introduction, #courses, #images, #access {
@@ -294,5 +319,83 @@ canvas{
 
     .title {
         margin-top: 800px;
+        background-color: red;
+        width: 80vw;
     }
+
+    .title img {
+        width: 80vw;
+    }
+    
+    .title p {
+        font-size: 20px;
+    }
+    
+    .bg-switcher {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(images2/background1.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .course-boxes {
+        margin: 0;
+    }
+
+    .course-box {
+        width: 160px;
+        height: 220px;
+    }
+    
+    .course-box-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .course-box-button {
+        margin: 0;
+        width: 140px;
+        background-color: #f16529;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 40px;
+        text-decoration: none;
+    }
+    
+    .intro1 {
+        display: block;
+        /* justify-content: center;
+        align-items: center;
+        padding: 20px 120px 30px 120px; */
+    }
+
+    .intro2 {
+        display: block;
+        /* justify-content: center;
+        align-items: center;
+        padding: 20px 120px 30px 120px; */
+    }
+
+    .intro-img {
+        width: 374px;
+    }
+    
+    .intro-box {
+        margin: 10px 0 0 40px;
+    }
+    
+    .intro-text {
+        width: 400px;
+        margin: 0 50px;
+        line-height: 32px;
+    }
+
+    iframe {
+        width: 100vw;
+    }
+
+  
 }
