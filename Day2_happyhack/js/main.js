@@ -9,6 +9,13 @@ $(function($) {
         arrows: true,
         // autoplay: false,
         slidesToShow: 4, // 表示するスライド枚数
+        responsive:[
+          {
+              breakpoint: 480,
+              settings:{
+                  slidesToShow:1,
+              }
+          }],
         dots: true,
         // centerMode: true,// 前後スライドを部分表示
     });

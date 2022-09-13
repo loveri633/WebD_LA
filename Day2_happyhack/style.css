@@ -2,88 +2,79 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 @font-face {
-    font-family: 'Futura-Dem';
-    src: url('fonts/Futura-Dem.ttf') format('truetype');
-         /* url('fonts/Futura-DemObl') format('truetype'); */
+    font-family: 'Futura-700';
+    src: url(fonts/Futura-Med.ttf) format('truetype');
+    font-weight: bold;   /* 700と同じ */
 }
 
 @font-face {
-    font-family: 'Futura-MedObl';
-    src: url('fonts/Futura-MedObl.ttf') format('truetype');
-         /* url('fonts/Futura-DemObl') format('truetype'); */
+    font-family: 'Futura-400';
+    src: url(fonts/Futura-Boo.ttf) format('truetype');
+    font-weight: normal;   /* 400と同じ */
 }
 
 @font-face {
-    font-family: 'Futura-Bol';
-    src: url('fonts/Futura-Bol.ttf') format('truetype');
-         /* url('fonts/Futura-DemObl') format('truetype'); */
+    font-family: 'Futura-lighter';
+    src: url(fonts/Futura-LigObl.ttf) format('truetype');
+    font-weight: lighter;
+    font-style: italic;
 }
 
-@font-face {
-    font-family: 'Futura-Med';
-    src: url('fonts/Futura-Med.ttf') format('truetype');
-         /* url('fonts/Futura-DemObl') format('truetype'); */
-}
-
-
-nav {
-    height: 66px;
-    margin-left: 653px;
-    /* padding: 0 50px 0 50px; */
-}
+/* nav {
+    height: 66px;  
+} */
 
 nav ul {
     display: flex;
-    margin: 0 50px 0 50px;
-    justify-content: space-between;
-}
-
-nav li {
-    list-style: none;
+    justify-content: flex-end;
+    margin: 0 50px;
 }
 
 nav a {
-    height: 66px;
+    display: inline-block;
+    padding: 30px 15px 0;
     color: #fff;
     font-size: 27px;
-    font-family: Futura-Dem;
-    /* font-weight: 400; */
-    /* font-style: normal; */
-    text-decoration: none;
-    display: inline-block;
-    padding: 30px 15px 0 15px;
+    font-family: 'Futura';
+    font-weight: normal;
     transition: 0.5s ;  
+    /* height: 66px; */
 }
-
 
 nav a:hover {
     color: #3d5cdb;
 }
 
 .title {
-   width: 900px;
+   /* width: 900px;
    height: 340px;
    margin: 0 auto;
-   margin-top: 125px;
+   margin-top: 125px; */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translateY(-50%) translateX(-50%);
 }
 
 .title img {
     width: 900px;
-    display: inline-block;
-    text-align: center;
+    /* display: inline-block;
+    text-align: center; */
 }
 
 .title p {
     margin-top: 30px;
     text-align: center;
     color: #fff;
-    font-size: 50px;
-    font-family: Futura-MedObl;
-    /* font-weight: 100;
-    font-style: italic */
+    font-size: 45px;
+    font-family: 'Futura';
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .bg-switcher {
@@ -95,40 +86,42 @@ nav a:hover {
 }
 
 h2 {
-    color: #3d5cdb;
-    font-size:60px;
-    font-family: Futura-Bol;
-    /* font-weight: 700;
-    font-style: normal; */
-    padding: 40px;
     text-align: center;
+    padding: 40px;
+    color: #3d5cdb;
+    font-size: 53px;
+    font-family: 'Futura';
 }
 
 .intro1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 120px 30px 120px;
+    margin-bottom: 40px;
+    /* padding: 20px 0 30px; */
 }
 
 .intro-img {
     width: 500px;
+    margin: 20px;
 }
 
 .intro-box {
-    margin: 10px 0 0 40px;
+    width: 500px;
+    margin: 20px;
+    /* margin: 10px 0 0 40px; */
 }
 
 .intro-text {
     width: 400px;
-    margin: 0 50px;
+    margin: 0 auto 20px;
     line-height: 32px;
 }
 
 .intro-button {
     text-align: center;
     display:block;
-    margin: 0 auto;
+    margin: 30px auto;
     width: 170px;
     background-color: #3d5cdb;
     border-radius: 12px;
@@ -136,8 +129,7 @@ h2 {
     font-size: 20px;
     font-weight: 700;
     line-height: 40px;
-    margin: 30px 165px;
-    text-decoration: none;
+    /* margin: 30px 165px; */
 }
 
 .intro-button:hover {
@@ -148,13 +140,14 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 120px 20px 120px;
-    margin: 40px 0;
-    flex-direction:row-reverse
+    margin-bottom: 40px;
+    /* padding: 20px 0 30px; */
 }
 
 .intro-box2 {
-    margin-right: 40px;
+    width: 500px;
+    margin: 20px;
+    /* margin: 10px 0 0 40px; */
 }
 
 .yellow {
@@ -163,8 +156,15 @@ h2 {
 
 #courses {
     text-align: center;
-   background-color: #D3E4F7;
-   height: 941px;
+    background-color: #D3E4F7;
+   /* height: 941px; */
+}
+
+.course {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .course-boxes {
@@ -184,11 +184,16 @@ h2 {
 
 .course-box-img {
     width: 150px;
-    height: 148px;
+    height: 150px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.course-box-img img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .course-box-name {
@@ -286,11 +291,10 @@ footer {
     height: 80px;
     line-height: 80px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     color: #3d5cdb;
-    font-family: 'Futura-Med';
-    /* font-weight: 400;
-    font-style: normal; */
+    font-family: 'Futura';
+    font-weight: 400;
 }
 
 #introduction, #courses, #images, #access {
@@ -312,23 +316,17 @@ canvas{
 @media all and (max-width:480px) {
 
 
-    nav, ul, li {
+    nav {
         display: none;
-        height: 0;
-    }
-
-    .title {
-        margin-top: 800px;
-        background-color: red;
-        width: 80vw;
     }
 
     .title img {
-        width: 80vw;
+        width: 70vw;
     }
     
     .title p {
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 100%;
     }
     
     .bg-switcher {
@@ -339,59 +337,88 @@ canvas{
         background-size: cover;
     }
 
-    .course-boxes {
-        margin: 0;
+    h2 {
+        /* padding: 40px; */
+        padding-bottom: 20px;
+        font-size: 32px;
     }
 
+    .intro1 {
+        /* display: flex;
+    justify-content: center;
+    align-items: center; */
+        margin-bottom: 30px;
+        font-size: 13px;
+        flex-wrap: wrap;
+        /* padding: 20px 0 30px; */
+    }
+    
+    .intro-img {
+        width: 90%
+        /* margin: 20px; */
+    }
+    
+    .intro-box {
+        width: 100%;
+        margin-bottom: 20px;
+        /* margin: 10px 0 0 40px; */
+    }
+    
+    .intro-text {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .intro2 {
+        margin-bottom: 30px;
+        font-size: 13px;
+        flex-wrap: wrap-reverse;
+        /* padding: 20px 0 30px; */
+    }
+    
+    .intro-box2 {
+        width: 100%;
+        margin-bottom: 20px;
+        /* margin: 10px 0 0 40px; */
+    }
+    
     .course-box {
         width: 160px;
         height: 220px;
+        padding: 10px;
+        margin: 20px 10px 10px;
+    }
+
+    .course-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 0 50px 0;
     }
     
     .course-box-img {
         width: 90px;
         height: 90px;
+        margin: 10px auto 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    
+    .course-box-name {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    
     .course-box-button {
-        margin: 0;
-        width: 140px;
-        background-color: #f16529;
-        border-radius: 12px;
-        color: #fff;
-        font-size: 13px;
-        font-weight: 700;
-        line-height: 40px;
-        text-decoration: none;
-    }
-    
-    .intro1 {
-        display: block;
-        /* justify-content: center;
-        align-items: center;
-        padding: 20px 120px 30px 120px; */
+        margin: 15px auto;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 12px;
     }
 
-    .intro2 {
-        display: block;
-        /* justify-content: center;
-        align-items: center;
-        padding: 20px 120px 30px 120px; */
-    }
 
-    .intro-img {
-        width: 374px;
-    }
-    
-    .intro-box {
-        margin: 10px 0 0 40px;
-    }
-    
-    .intro-text {
-        width: 400px;
-        margin: 0 50px;
-        line-height: 32px;
-    }
+
 
     iframe {
         width: 100vw;
